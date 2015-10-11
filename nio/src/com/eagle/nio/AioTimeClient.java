@@ -62,7 +62,7 @@ public class AioTimeClient {
                                 try {
                                     String body = new String(bytes, "UTF-8");
                                     System.out.println("Now is : " + body);
-                                    //latch.countDown();
+                                    latch.countDown();
                                 } catch (UnsupportedEncodingException e) {
                                     e.printStackTrace();
                                 }
